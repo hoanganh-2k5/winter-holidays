@@ -1,0 +1,1617 @@
+/* header */
+.wrap-all{
+    position: relative;
+}
+
+#header{
+    height: var(--header-height);
+}
+
+.header-wrap{
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+    background-color: var(--white-color);
+}
+
+.header__logo{
+    display: block;
+    height: 48px;
+}
+
+.header__logo-link{
+    height: 100%;
+}
+
+.header__navbar-list{
+    display: flex;
+    height: var(--header-height);
+    float: left;
+    align-items: center;
+}
+
+.header__navbar-items{
+    padding: 0 20px;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    line-height: var(--header-height);
+}
+
+.header__navbar-item-home,
+.header__navbar-item-page,
+.header__navbar-item-Destination,
+.header__navbar-item-tour,
+.header__navbar-item-blog,
+.header__navbar-item-shop,
+.header__navbar-item-element{
+    padding: 0 4rem;
+    position: relative;
+}
+
+.header__navbar-item-home .header__navbar-link{
+    color: var(--primary-color);
+}
+
+.header__navbar-link:hover{
+    color: var(--primary-color);
+    transition: color 0.2s ease-out;
+    --webkit-transition: 0.2s ease-out;
+}
+
+.header__navbar-item-home:hover .header-wrap-list{
+    height: 390px;
+    z-index: 0;
+    transition: 0.4s ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.header__navbar-item-page:hover .header-wrap-list{
+    height: 360px;
+    z-index: 0;
+    transition: 0.4s ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.header__navbar-item-Destination:hover .header-wrap-list{
+    height: 150px;
+    z-index: 0;
+    transition: 0.4s ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.header__navbar-item-tour:hover .header-wrap-list{
+    height: 190px;
+    z-index: 0;
+    transition: 0.4s ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.header__navbar-item-blog:hover .header-wrap-list{
+    z-index: 0;
+    transition: 0.4s ease;
+    height: 150px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.header__navbar-item-shop:hover .header-wrap-list{
+    height: 190px;
+    z-index: 0;
+    transition: 0.4s ease;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.header__navbar-link:hover .header-underline{
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    transition: 0.2s linear;
+}
+
+.header__navbar-item-element:hover .header__element{
+    height: 440px;
+    z-index: 2;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+.header-underline{
+    width: 0;
+    background-color: var(--primary-color);
+    height: 2px;
+    position: absolute;
+    bottom: -3px;
+    transition: 0.2s linear;
+}
+
+.header-underline-2{
+    width: 0;
+    background-color: var(--primary-color);
+    height: 1.5px;
+    position: absolute;
+    bottom: -3px;
+    transition: 0.2s linear;
+}
+
+.header__navbar-link{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.header-wrap-list{
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 256px;
+    background-color: var(--white-color);
+    transition: 0.4s ease;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.header-wrap-list::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    height: 30px;
+    width: 120px;
+    background-color: var(--white-color);
+}
+
+
+.header-list-item{
+    padding-left: 0;
+    list-style: none;
+    padding: 15px 0;
+}
+
+.header-item{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 3px 40px;
+}
+
+.header-item-link{
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+    line-height: 25px;
+}
+
+.header-arrow-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-arrow-icon{
+    font-size: 1rem;
+}
+
+.header-item-link:hover{
+    color: var(--primary-color);
+}
+
+.header-item-link span{
+    position: relative;
+    line-height: 2;
+}
+
+.header-item-link:hover span .header-underline-2,
+.first-item-link:hover .header-underline-2{
+    width: 100%;
+    background-color: var(--primary-color);
+    height: 1.5px;
+    position: absolute;
+    bottom: -3px;
+    transition: 0.2s linear;
+}
+
+.header__navbar-list .header__navbar-list-icon{
+    float: right;
+}
+
+.header__navbar-list-icon{
+    display: flex;
+    height: var(--header-height);
+    align-items: center;
+}
+
+.header__element{
+    z-index: -1;
+    position: absolute;
+    top: 80px;
+    right: -287px;
+    padding: 20px 0;
+    width: 1519px;
+    float: left;
+    background-color: var(--white-color);
+    height: 0;
+    transition: 0.4s ease;
+    overflow: hidden;
+}
+
+.header__element-list{
+    background-color: var(--white-color);
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    display: block;
+}
+
+.header__element-item{
+    display: block;
+    float: left;
+}
+
+.first-list{
+    margin-left: 100px;
+    list-style: none;
+}
+
+.first-item{
+    display: block;
+    height: 40px;
+}
+
+.first-item-link{
+    text-decoration: none;
+    display: block;
+    height: 30px;
+}
+
+.first-item-link h1{
+    font-size: 1.3rem;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-family: var(--font);
+    display: block;
+    line-height: 30px;
+    position: relative;
+}
+
+.first-item-link{
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 500;
+    display: block;
+    line-height: 30px;
+}
+
+.first-item-link span{
+    position: relative;
+}
+
+.first-item-link:hover{
+    color: var(--primary-color);
+}
+
+
+.second-list{
+    margin-left: 100px;
+    list-style: none;
+}
+
+.third-list{
+    margin-left: 165px;
+    list-style: none;
+}
+
+.forth-list{
+    margin-left: 220px;
+    list-style: none;
+}
+
+.header__icon{
+    color: var(--black-color);
+    padding: 0 10px;
+    font-size: 1.9rem;
+}
+
+/* container */
+    /* content 1 */
+.winter__content{
+    background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-parallax-1.jpg);
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.winter__content-welcome{
+    color: var(--white-color);
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+}
+
+.winter__content-welcome span {
+    font-size: 5rem;
+    font-family: 'Satisfy';
+}
+
+.winter__content-welcome h1{
+    font-size: 12rem;
+    line-height: 12rem;
+}
+
+.winter__content-welcome p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding-top: 2rem;
+    width: 730px;
+    display: inline-block;
+}
+
+.winter__content-welcome-item{
+    margin-bottom: 1rem;
+}
+    /* content 2 */
+.grid__column-10{
+    overflow-x: auto;
+}
+
+.grid__column-10::-webkit-scrollbar{
+    width: 0;
+}
+
+.winter__activities-img{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.winter__activities-img img{
+    display: block;
+    width: 100%;
+    transition: 0.7s ease;
+}
+
+.winter__activities-img:hover img{
+    transform: scale(1.03);
+    transition: 0.7s ease;
+}
+
+.winter__activities-content{
+    margin-bottom: 35px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+}
+
+.winter__activities-box{
+    position: relative;
+    display: flex;
+    background-color: var(--primary-color);
+    top: -5px;
+}
+
+.winter__activities-box-item{
+    padding: 10px 12px;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.winter__activities-item-icon{
+    margin-right: 6px;
+}
+
+.winter__activities-box:first-child{
+    padding-left: 10px;
+}
+
+.winter__activities-info{
+    padding: 31px 25px 33px 25px;
+    position: relative;
+    top: -5px
+}
+
+.winter__activities-info-heading{
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+.winter__activities-description{
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 2rem;
+    height: 4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.winter__activities-info-item{
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.winter__activities-info-rating{
+    margin-left: 18px;
+    
+}
+
+.winter__activities-rating-icon,
+.winter__activities-rating-point{
+    margin-right: 4px;  
+}
+
+.winter__activities-dot{
+    display: flex;
+    justify-content: center;
+}
+
+.winter__activities-dot-icon{
+    margin: 0 8px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.2s ease;
+    --webkit-transition: 0.2s ease;
+}
+
+.winter__activities-dot-icon:hover{
+    filter: brightness(100%);
+    opacity: 1;
+    transition: 0.2s ease;
+    --webkit-transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.winter__arrow-1{
+    position: absolute;
+    top: 35%;
+    right: 26px;
+}
+
+.winter__arrow--right{
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 16px 20px 16px 20px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
+
+.winter__arrow--right:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.winter__arrow-2{
+    position: absolute;
+    top: 35%;
+    left: 26px;
+}
+
+.winter__arrow--left{
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 16px 20px 16px 20px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
+
+.winter__arrow--left:hover{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/* content 3 */
+.winter__general,
+.winter__holiday{
+    text-align: center;
+    padding: 100px 0;
+}
+
+.winter__resort{
+    text-align: center;
+    padding: 100px 0;
+    padding: 120px 0 170px;
+}
+
+.winter__general-title{
+    font-size: 3.3rem;
+    font-family: 'satisfy';
+    color: var(--primary-color);
+}
+
+.winter__general-heading{
+    padding: 15px 0 10px;
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+}
+
+.winter__general-video{
+    text-align: center;
+    display: inline-block;
+}
+
+.winter__general-link{
+    display: block;
+    position: relative;
+    cursor: default;
+    width: 858px;
+    padding: 40px 0 15px;
+}
+
+.winter__general-img{
+    width: 100%;
+}
+
+.winter-play-btn{
+    position: absolute;
+    top: 45%;
+    left: 46%;
+    z-index: 1;
+    background-color: var(--primary-color);
+    padding: 25px 28px 25px 30px;
+    border-radius: 50%;
+    filter: brightness(1.1);
+    transition: 0.2s linear;
+    --webkit-transition: 0.2s linear;
+}
+
+.winter__general-img:hover{
+    cursor: pointer;
+}
+
+.winter__general-link:hover .winter-play-btn{
+    transition: 0.2s linear;
+    --webkit-transition: 0.2s linear;
+    transform: scale(1.06);
+}
+
+.winter-play-btn-icon{
+    font-size: 1.5rem;
+    color: var(--white-color);
+}
+
+.winter__general-p{
+    width: 858px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    padding: 10px 0;
+}
+
+.winter__general-button{
+    display: block;
+    text-align: center;
+}
+
+.winter__general-button-btn{
+    padding: 22px 66px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    filter: brightness(1.1);
+    border-radius: 1px;
+    transition: 0.3s ease;
+    --webkit-transition: 0.3s ease;
+}
+
+.winter__general-button-btn:hover{
+    transition: 0.3s ease;
+    --webkit-transition: 0.3s ease;
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+.winter__top-review{
+    background-image: url(https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-parallax-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.winter__top-review-heading{
+    padding: 15px 0 10px;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: var(--white-color);
+}
+
+.winter__top-review-p{
+    width: 570px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    padding: 10px 0;
+    color: var(--white-color);
+}
+
+.winter__top-review-member-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.top-review-member--wrap{
+    display: flex;
+    background-color: var(--white-color);
+    width: 480px;
+    padding: 40px 44px;
+    border-radius: 6px;
+    margin-bottom: 37px;
+}
+
+.top-review__member-ava{
+    padding: 5px 20px 20px 0;
+}
+
+.top-review__member-list{
+    text-align: left;
+    padding-top: 10px;
+}
+
+.top-review__member-place{
+    color: var(--black-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    --webkit-transition: 0.2s ease;
+}
+
+.top-review__member-place:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.2s ease;
+    --webkit-transition: 0.2s ease;
+}
+
+.top-review__member-rate{
+    padding: 12px 0 16px
+}
+
+.top-review__member-rate{
+    color: var(--primary-color);
+    cursor: default;
+}
+
+.top-review__member-comment{
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-bottom: 16px;
+    cursor: default;
+}
+
+.top-review__member-name{
+    color: var(--black-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: default;
+}
+
+/* holiday  */
+.winter__holiday-p{
+    font-size: 1.8rem;
+    width: 565px;
+    display: inline-block;
+    padding-top: 15px;
+    line-height: 1.5;
+}
+
+.winter__holiday-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 125px;
+    padding: 60px 0;
+}
+
+.winter__holiday-item{
+    padding: 0 50px;
+}
+
+.winter__holiday-icon{
+    padding-bottom: 20px;
+    transition: 0.2s linear;
+    --webkit-transition: 0.2s linear;
+}
+
+.winter__holiday-icon:hover{
+    transition: 0.2s linear;
+    --webkit-transition: 0.2s linear;
+    transform: translateY(-5px);
+}
+
+.winter__holiday-item--activity{
+    font-size: 1.8rem;
+}
+
+.winter__holiday-item--description{
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-top: 1.1rem;
+    line-height: 1.75;
+}
+
+.winter__guest{
+    display: flex;
+    justify-content: space-between;
+}
+
+.winter__guest-item{
+    position: relative;
+}
+
+.winter__guest-item:hover .winter__guest-info{
+    transition: 0.5s ease-out;
+    --webkit-transition: 0.5s ease-out;
+    bottom: 0;
+    z-index: 0;
+}
+
+.winter__guest-img{
+    height: 100%;
+    width: 379.8px;
+}
+
+.winter__guest-info{
+    position: absolute;
+    bottom: -169px;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 30px 18px;
+    text-align: center;
+    filter: brightness(110%);
+    transition: 0.5s ease-out;
+    --webkit-transition: 0.5s ease-out;
+}
+
+.winter__guest-name{
+    color: var(--white-color);
+    padding-bottom: 14px;
+    font-size: 1.8rem;
+}
+
+.winter__guest-comment{
+    color: var(--white-color);
+    font-size: 1.4rem;
+    padding-bottom: 18px;
+    line-height: 1.6;
+}
+
+.winter__guest-social{
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.winter__guest-social-icon{
+    margin: 0 15px;
+}
+
+.winter__statistical{
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+}
+
+.winter__statistical-data{
+    padding: 80px;
+    margin: 0 40px;
+    display: block;
+    text-align: center;
+}
+
+.winter__statistical-number{
+    font-size: 6.5rem;
+    color: var(--white-color);
+    line-height: 6.5rem;
+    padding-bottom: 15px;
+}
+
+.winter__statistical-item{
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+.winter__resort-p{
+    width: 560px;
+    font-size: 1.75rem;
+    display: inline-block;
+    line-height: 1.5;
+    margin-top: 5px;
+    font-weight: 100;
+}
+
+.winter__resort-place{
+    margin-top: 60px;
+}
+
+.winter__resort-place-list{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: 380px;
+}
+
+.winter__resort-place-item{
+    padding: 0 20px;
+}
+
+.winter__resort-place-link{
+    text-decoration: none;
+    font-family: 'satisfy';
+    font-size: 4.8rem;
+    color: var(--white-color);
+    display: block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.winter__resort-place-hot{
+    position: absolute;
+    top: 15px;
+    right: 43px;
+    padding: 10px 17px 19px 17px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    filter: brightness(110%);
+}
+
+.winter__resort-place-hot-icon{
+    font-size: 1.3rem;
+}
+
+.winter__resort-place-link:hover .winter__resort-img{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    width: 100%;
+}
+
+.winter__resort-img--wrap{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.winter__resort-img{
+    border-radius: 50%;
+    height: 100%;
+    filter: brightness(75%);
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.winter__resort-place-link span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+/* footer  */
+
+.footer-wrap-list{
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 110px 78px;
+}
+
+.footer__wrap{
+    padding: 0 15px;
+}
+
+.footer__contact-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__contact-item{
+    display: block;
+    margin-bottom: 14px;
+}
+
+.footer__contact-logo{
+    height: 100%;
+    display: block;
+}
+
+.footer__contact-logo-img{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer__contact-p{
+    color: #a9a9a9;
+    font-size: 1.7rem;
+    line-height: 1.64;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+.footer__contact-email,
+.footer__contact-phone,
+.footer__contact-location{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.footer__contact-email-address,
+.footer__contact-phone-address,
+.footer__contact-location-address {
+    padding-left: 10px;
+}
+
+.footer__post-list,
+.footer__subcribe-list,
+.footer__instagram-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__post-item,
+.footer__instagram-item{
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+.footer__post-heading,
+.footer__instagram-heading{
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.footer__post-item-wrap-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer__post-item-wrap{
+    margin-bottom: 5px;
+}
+
+.footer__post-occur,
+.footer__instagram-occur{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.footer__post-place{
+    color: #a9a9a9;
+}
+
+.footer__subcribe-item{
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    color: #a9a9a9;
+    line-height: 1.6;
+}
+
+.footer__subcribe-heading{
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.footer__subcribe-item-p{
+    font-size: 1.4rem;
+}
+
+.footer__subcribe-name--input{
+    position: relative;
+}
+
+.footer__subcribe-email--input{
+    position: relative;
+}
+
+.footer__subcribe-name-icon,
+.footer__subcribe-email-icon{
+    position: absolute;
+    color: var(--white-color);
+    top: 18px;
+    left: 20px;
+    font-size: 1.4rem;
+}
+
+.footer__subcribe-name,
+.footer__subcribe-email{
+    background-color: #595959;
+    color: var(--white-color);
+    padding: 12px 16px 12px 47px;
+    height: 54px;
+    width: 100%;
+    border: none;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+
+.footer__subcribe-btn{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 18px 42px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 100%;
+    filter: brightness(110%);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.footer__subcribe-btn:hover{
+    color: var(--black-color);
+    background-color: var(--white-color);
+    transition: 0.3s ease;
+}
+
+.footer__instagram-place{
+    color: #a9a9a9;
+    line-height: 1.7;
+}
+
+.footer-me{
+    display: block;
+    text-align: center;
+    background-color: rgb(33, 33, 33);
+    color: var(--white-color);
+    font-size: 1.3rem;
+    padding: 60px 0 40px;
+}
+
+.footer-me span {
+    color: #a9a9a9;
+}
+
+.footer-me-link{
+    color: var(--white-color);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.footer-me-link:hover{
+    color: var(--primary-color);
+    transition: 0.2s ease;
+}
+
+/* related */
+.related{
+    position: fixed;
+    background-color: var(--white-color);
+    height: 100%;
+    width: 285px;
+    right: -285px;
+    z-index: 999;
+}
+
+.related{
+    box-shadow: 1px 0 12px 0.2px rgba(0, 0, 0, 0.1);
+}
+.related-fixed{
+    position: fixed;
+    bottom: 0;
+    width: 285px;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: #ef2853;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.related-fixed-btn{
+    color: var(--white-color);
+    text-decoration: none;
+    letter-spacing: 1.1px;
+    font-size: 0.86rem;
+}
+
+.related-fixed-btn i{
+    margin-left: 5px;
+}
+
+.related-wrap{
+    padding: 20px 30px;
+}
+
+.related-heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 7px 0;
+}
+
+.related-title{
+    font-weight: 500;
+    font-size: 1.7rem;
+    margin-left: 10px;
+}
+
+.related-theme{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.related-item-img{
+    display: block;
+    height: 100%;
+}
+
+.related-item-img img{
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.related-item-name{
+    font-size: 1.3rem;
+    margin: 8px 0 5px;
+}
+
+.related-item-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.related-item-footer--travel{
+    color: #a6a6a6;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-size: 0.84rem;
+}
+
+.related-item-footer--price{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.related-btn{
+    position: absolute;
+    top: 100px;
+    left: -122px;
+    padding: 8px 25px 5px 10px;
+    background-color: #ef2853;
+    cursor: pointer;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    z-index: 300;
+    transition: 0.3s ease;
+}
+
+.shop-btn-2{
+    position: absolute;
+    top: 150px;
+    left: -122px;
+    padding: 14px 24px 12px 15px;
+    background-color: var(--white-color);
+    cursor: pointer;
+    color: #ef2853;
+    z-index: 300;
+    transition: 0.3s ease;
+}
+
+.shop-btn-2-title{
+    color: var(--black-color);
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+}
+
+.related-btn-title{
+    margin-left: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 1rem;
+}
+
+.related-btn-right{
+    position: absolute;
+    top: 100px;
+    left: -44px;
+    padding: 14px 16px;
+    background-color: #ef2853;
+    cursor: pointer;
+}
+
+.related-btn-icon{
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+.shop-btn{
+    position: absolute;
+    top: 150px;
+    left: -44px;
+    padding: 13px 15px;
+    background-color: var(--white-color);
+    cursor: pointer;
+    box-shadow: -5px 0 12px 0.2px rgba(0, 0, 0, 0.1);
+    z-index: 200;
+}
+
+.shop-btn-icon{
+    font-size: 1.4rem;
+    color: #ef2853;
+}
+
+/* responsive */
+
+.header-wrap-2{
+    display: none;
+    background-color: var(--primary-color);
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white-color);
+    height: 79px;
+    filter: brightness(110%);
+}
+
+.header-menu{
+    margin-left: 116px;
+}
+
+.header-menu-list-icon{
+    font-size: 1.8rem;
+}
+
+.header-title-link-img{
+    width: 110px;
+}
+
+.header-account{
+    margin-right: 116px;
+}
+
+.header-menu-account-icon{
+    font-size: 1.8rem;
+}
+
+@media (width: 1024px){
+    .header-wrap{
+        display: none;
+    }
+
+    .header-wrap-2{
+        display: flex;
+    }
+
+    .winter__content{
+        height: 630px;
+    }
+
+    .winter__content-welcome-item{
+        margin-bottom: 0;
+    }
+
+    .winter__content-welcome-item span{
+        font-size: 4.8rem;
+    }
+    
+    .winter__content-welcome-item h1{
+        font-size: 8rem;
+    }
+
+    .winter__content-welcome-item p{
+        width: 550px;
+        padding-top: 0;
+    }
+
+    .winter__arrow-1,
+    .winter__arrow-2{
+        display: none;
+    }
+
+    .winter__activities{
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .top-review-member--wrap{
+        width: calc(100% / 3);
+        margin-right: 30px;
+        display: block;
+    }
+
+    .top-review__member-list{
+        text-align: center;
+    }
+    
+    .winter__holiday-list{
+        display: block;
+    }
+
+    .winter__holiday-item{
+        padding-bottom: 48px;
+    }
+
+    .winter__guest{
+        overflow-x: auto;
+        scrollbar-width: none;
+        overflow-y: hidden;
+    }
+
+    .winter__guest-img{
+        max-width: 336px;
+    }
+    
+    .winter__statistical-data{
+        padding: 80px 10px;
+    }
+
+    .winter__resort{
+        padding-bottom: 40px;
+    }
+
+    .winter__resort-place-item{
+        height: 230px;
+    }
+
+    .winter__resort-place-link span{
+        font-size: 3.6rem;
+        top: 47%;
+    }
+
+    .winter__resort-place-hot{
+        right: 5px;
+    }
+
+    .footer-wrap-list{
+        flex-wrap: wrap;
+    }
+
+    .footer__contact-logo-img{
+        width: 70%;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 1024px){
+    .wrap-all{
+        overflow: hidden;
+    }
+
+    .related{
+        display: none;
+    }
+    
+    .header-wrap{
+        display: none;
+    }
+
+    .header-wrap-2{
+        display: flex;
+    }
+
+    .winter__content{
+        height: 450px;
+    }
+
+    .winter__content-welcome{
+        width: 100%;
+    }
+
+    .winter__content-welcome-item{
+        margin-bottom: 0;
+    }
+
+    .winter__content-welcome-item span{
+        font-size: 3.4rem;
+    }
+    
+    .winter__content-welcome-item h1{
+        font-size: 3.6rem;
+        line-height: 5rem;
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    .winter__content-welcome-item p{
+        width: 63.5%;
+        padding-top: 0;
+        font-size: 1.6rem;
+    }
+
+    .winter__arrow-1,
+    .winter__arrow-2{
+        display: none;
+    }
+
+    .winter__activities{
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .winter__general-heading{
+        font-size: 3.4rem;
+        padding: 0 0 10px 0;
+    }
+
+    .winter__general-video{
+        text-align: center;
+    }
+
+    .winter__general-wrap{
+        width: 70%;
+        display: inline-block;
+    }
+
+    .winter__general-link{
+        width: 100%;
+    }
+
+    .winter__general-img{
+        width: 100%;
+    }
+
+    .winter-play-btn{
+        top: 40%;
+        left: 40%;
+    }
+
+    .winter__general-p{
+        width: 70%;
+        font-weight: 100;
+        line-height: 1.5;
+        font-size: 1.5rem;
+    }
+
+    .winter__general-button-btn{
+        padding: 18px 44px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 1.4px;
+        --webkit-transition: 0.3s ease;
+    }
+
+    .winter__top-review-heading{
+        font-size: 3.4rem;
+        padding: 0;
+    }
+
+    .winter__top-review-p{
+        width: 60%;
+        font-weight: 100;
+        line-height: 1.5;
+        font-size: 1.7rem;
+        padding-top: 0;
+    }
+    
+    .winter__top-review-member-wrap{
+        overflow-x: auto;
+    }
+
+    .top-review-member--wrap{
+        padding: 40px 22px;
+        display: block;
+        margin-right: 20px;
+    }
+
+    .top-review__member-list{
+        text-align: center;
+    }
+    
+    .top-review__member-comment{
+        width: 370px;
+    }
+
+    .winter__holiday-p{
+        width: 60%;
+        padding-top: 0;
+    }
+
+    .winter__holiday-list{
+        display: block;
+        margin: 0;
+    }
+
+    .winter__holiday-item{
+        width: 70%;
+        display: inline-block;
+    }
+
+    .winter__holiday-item--description{
+        margin-bottom: 40px;
+    }
+
+    .winter__guest{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .winter__guest-img{
+        min-width: 414px;
+    }
+
+    .winter__statistical{
+        display: block;
+    }
+
+    .winter__resort-p{
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .winter__resort-place{
+        display: block;
+    }
+
+    .winter__resort-place-list{
+        display: inline-block;
+        height: auto;
+        padding: 0;
+    }
+
+    .winter__resort-place-item{
+        display: inline-block;
+        padding: 25px 55px;
+    }
+
+    .winter__resort-place-link span{
+        font-size: 3.8rem;
+        top: 47%;
+    }
+
+    .winter__resort-place-hot{
+        right: 0;
+        top: 40px;
+    }
+
+    .footer-wrap-list{
+        display: block;
+        padding: 106px 30px 58px;
+    }
+
+    .footer__contact-logo-img{
+        width: 85%;
+    }
+
+    .footer-me{
+        padding: 30px 0;
+    }
+}
