@@ -287,9 +287,9 @@ html {
     }
 }
 
-@media (min-width: 414px) and (max-width: 1024px){
+@media (min-width: 375px) and (max-width: 1024px){
     .grid__column-10-2{
-        width: 2070px;
+        width: 1790px;
     }
 
     .grid__column-2-5{

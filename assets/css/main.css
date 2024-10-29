@@ -1411,7 +1411,7 @@
     }
 }
 
-@media (min-width: 414px) and (max-width: 1024px){
+@media (min-width: 375px) and (max-width: 1024px){
     .wrap-all{
         overflow: hidden;
     }
@@ -1524,6 +1524,7 @@
     
     .winter__top-review-member-wrap{
         overflow-x: auto;
+        scrollbar-width: none;
     }
 
     .top-review-member--wrap{
@@ -1537,7 +1538,7 @@
     }
     
     .top-review__member-comment{
-        width: 370px;
+        width: 314px;
     }
 
     .winter__holiday-p{
@@ -1562,10 +1563,11 @@
     .winter__guest{
         overflow-x: auto;
         overflow-y: hidden;
+        scrollbar-width: none;
     }
 
     .winter__guest-img{
-        min-width: 414px;
+        width: 358.5px;
     }
 
     .winter__statistical{
