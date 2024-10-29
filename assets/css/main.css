@@ -781,7 +781,7 @@
 
 .winter__guest-info{
     position: absolute;
-    bottom: -169px;
+    bottom: -175px;
     background-color: var(--primary-color);
     width: 100%;
     padding: 30px 18px;
@@ -1576,6 +1576,7 @@
 
     .winter__guest-img{
         width: 375px;
+        height: 100%;
     }
 
     .winter__statistical{
