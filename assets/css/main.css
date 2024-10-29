@@ -1428,6 +1428,14 @@
         display: flex;
     }
 
+    .header-menu{
+        margin-left: 54px;
+    }
+
+    .header-account{
+        margin-right: 54px;
+    }
+
     .winter__content{
         height: 450px;
     }
@@ -1490,8 +1498,8 @@
     }
 
     .winter-play-btn{
-        top: 40%;
-        left: 40%;
+        top: 37%;
+        left: 37%;
     }
 
     .winter__general-p{
